@@ -4,21 +4,21 @@ output = open("output.txt", "a+")
 def f1():
     for i in tokens:
         t = i.split(":")
-        output.write(f"{t[1]}:{t[0]}:{t[2]}\n")
+        output.write(f"{t[2]}:{t[0]}:{t[1]}\n")
 
 def f2():
     for i in tokens:
         t = i.split(":")
-        output.write(f"{t[1]}:{t[2]}:{t[0]}\n")
+        output.write(f"{t[2]}:{t[1]}:{t[0]}\n")
 
 def f3():
     for i in tokens:
         t = i.split(":")
-        output.write(f"{t[1]}\n")
+        output.write(f"{t[2]}\n")
 def f4():
     for i in tokens:
         t = i.split(":")
-        output.write(f"{t[0]}:{t[2]}:{t[1]}\n")
+        output.write(f"{t[0]}:{t[1]}:{t[2]}\n")
     
 modes = {'1': f1, '2': f2, '3': f3,'4':f4}
 
